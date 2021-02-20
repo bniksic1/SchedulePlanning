@@ -11,18 +11,21 @@
 	</head>
 	<body>
 		<div class="topnav">
-			<a class="active" href="">Raspored</a>
+			<a class="bg-success" href="">Raspored</a>
 			<a href="aktivnost.html">Aktivnost</a>
 			<a href="planiranjeNastavnik.html">Planiranje nastavnik</a>
 			<a href="podaciStudent.html">Podaci student</a>
 			<a href="studenti.html">CSV Unos studenata</a>
+			<a class="bg-primary" href="pregled.html">Baza podataka</a>
 		</div>
 
-		<div id="prva"></div>
-
-		<div class="d-flex justify-content-end mr-5 mt-5">
-			<button type="submit" class="col-2 btn btn-danger btn-block" id="button">Očisti raspored</button>
+		<div class="border bg-light col-8 pr-5 m-auto ">
+			<div id="prva"></div>
+			<div class="d-flex justify-content-end mr-5 mt-5">
+				<button type="submit" class="col-3 btn btn-danger btn-block mb-4" id="button">Očisti raspored</button>
+			</div>
 		</div>
+
 		<script src="js/iscrtajModul.js"></script>
 		<script src="js/iscrtajRasporedTabelu.js"></script>
 	</body>
