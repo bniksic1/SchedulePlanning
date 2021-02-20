@@ -98,15 +98,26 @@ const asyncPostNewActivity = (statusPredmeta, predmet) => {
     ajaxDan.send(JSON.stringify({"naziv": document.getElementById("dan").value}))
 }
 
-document.getElementById("button").addEventListener("click", () => {
-    if(document.getElementById("naziv").value === ""
-        || document.getElementById("tip").value === ""
-        || document.getElementById("pocetak").value === ""
-        || document.getElementById("kraj").value === "") {
-        validationAction(false, "Popunite sva polja sa forme!")
-        return
-    }
+const validation = () => {
+    if(document.getElementById("naziv").value === "")
+        validationAction(false, "Polje naziv ne smije biti prazno")
+    else if(document.getElementById("tip").value === "")
+        validationAction(false, "Polje tip ne smije biti prazno")
+    else if(document.getElementById("pocetak").value === "")
+        validationAction(false, "Unesite validan početak aktivnosti (8-20h)")
+    else if(document.getElementById("kraj").value === "")
+        validationAction(false, "Unesite validan kraj aktivnosti (8-20h)")
+    else if(document.getElementById("pocetak").value >= document.getElementById("kraj").value)
+        validationAction(false, "Vrijeme početka aktivnosti ne može biti veće od kraja")
+    else
+        return true
+    return false
 
+}
+
+document.getElementById("button").addEventListener("click", () => {
+    if(!validation())
+        return
     const postPredmet = new XMLHttpRequest()
 
     postPredmet.onreadystatechange = () => {

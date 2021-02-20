@@ -488,11 +488,8 @@ app.put("/v2/aktivnost/:id", (req, res) => {
         )
 })
 app.delete("/v2/aktivnost/:id", (req, res) => {
-    DB.Aktivnost.destroy({
-        where: {
-            id: Number(req.params.id)
-        }
-    })
+    const where = req.params.id === "all" ? {where : {}} : {where: {id: Number(req.params.id)}}
+    DB.Aktivnost.destroy(where)
         .then(() => {
             res.json({message: "Uspješno obrisana aktivnost!"})
         })

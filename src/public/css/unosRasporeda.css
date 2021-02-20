@@ -69,7 +69,8 @@ form{
     background-color: lightcoral;
     border-radius: 8px;
     height: 30px;
-    width: 300px;
+    width: fit-content;
+    padding: 0 10px;
     /*display: flex;*/
     justify-content: center;
     display: none;
