@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Zadatak 3</title>
+    <link rel="stylesheet" href="css/planiranjeNastavnik.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/unosRasporeda.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    <div class="topnav">
+        <a href="raspored.html">Raspored</a>
+        <a href="aktivnost.html">Aktivnost</a>
+        <a class="active" href="">Planiranje nastavnik</a>
+        <a href="podaciStudent.html">Podaci student</a>
+    </div>
+    <div class="forma">
+        <p>Dodaj novu aktivnost</p>
+        <form action="http://localhost:3000/aktivnost" method="post">
+            <div class="form-outline mb-4">
+                <input
+                        id="naziv"
+                        type="text"
+                        name="naziv"
+                        class="form-control"
+                        placeholder="Naziv predmeta"
+                />
+            </div>
+            <div class="form-outline mb-4">
+                <input
+                        id="tip"
+                        type="text"
+                        name="tip"
+                        class="form-control"
+                        placeholder="Tip aktivnosti"
+                />
+            </div>
+            <div class="form-outline mb-4">
+                <input
+                        id="pocetak"
+                        type="time"
+                        name="pocetak"
+                        class="form-control vrijeme"
+                        placeholder="Početak aktivnosti"
+                />
+            </div>
+            <div class="form-outline mb-4">
+                <input
+                        id="kraj"
+                        type="time"
+                        name="kraj"
+                        class="form-control vrijeme"
+                        placeholder="Kraj aktivnosti"
+                />
+            </div>
+            <div class="form-outline mb-4">
+                <select
+                        id="dan"
+                        name="dan"
+                        class="form-control"
+                >
+                    <option value="ponedjeljak">Ponedjeljak</option>
+                    <option value="utorak">Utorak</option>
+                    <option value="srijeda">Srijeda</option>
+                    <option value="četvrtak">Četvrtak</option>
+                    <option value="petak">Petak</option>
+                    <option value="subota">Subota</option>
+                    <option value="nedjelja">Nedjelja</option>
+                </select>
+            </div>
+        </form>
+        <button type="submit" class="btn btn-primary btn-block" id="button">Pošalji</button>
+        <div class="validation-container">
+            <div class="validation" id="validacija">
+                VALIDACIJA
+            </div>
+        </div>
+    </div>
+    <script src="js/unosRasporeda.js"></script>
+</body>
+</html>

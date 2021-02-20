@@ -1,0 +1,26 @@
+{
+  "name": "master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/Spirala 3/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/bniksic1/wt20p18463/src/master/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "csv-parser": "^3.0.0",
+    "express": "^4.17.1",
+    "mocha": "^8.3.0",
+    "mysql2": "^2.2.5",
+    "request": "^2.88.2",
+    "sequelize": "^6.3.5"
+  }
+}

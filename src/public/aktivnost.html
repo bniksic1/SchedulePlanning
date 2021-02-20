@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Zadatak 2</title>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/aktivnost.css">
+		<link rel="stylesheet" type="text/css" href="css/menu.css">
+	</head>
+	<body>
+		<div class="topnav">
+			<a href="raspored.html">Raspored</a>
+			<a class="active" href="">Aktivnost</a>
+			<a href="planiranjeNastavnik.html">Planiranje nastavnik</a>
+			<a href="podaciStudent.html">Podaci student</a>
+		</div>
+		<div class="flex-container">
+
+			<fieldset class="side-rounded" id="prethodna">
+				<legend class="side-legend">Prethodna aktivnost</legend>
+
+				<div class="text-box" id="prethodna-aktivnost">
+					<p class="naslov">
+						OI<br>
+						Predavanja<br>
+					</p>
+					<p class="opis">
+						Aktivnost od prije 1 dan
+					</p>
+				</div>
+			</fieldset>
+
+			<fieldset class="central-rounded">
+				<legend class="central-legend">Trenutna aktivnost</legend>
+
+				<div class="text-box" id="trenutna-aktivnost">
+					<p class="naslov">
+						WT<br>
+						Predavanja<br>
+					</p>
+					<p class="opis">
+						Preostalo vrijeme: 60min<br>
+						Početak: 09:00<br>
+						Kraj: 12:00
+					</p>
+				</div>
+			</fieldset>
+
+			<fieldset class="side-rounded">
+				<legend id="slj-akt" class="side-legend">Sljedeća aktivnost</legend>
+				<div class="text-box" id="sljedeca-aktivnost">
+					<p class="naslov">
+						WT<br>
+						Vježbe<br>
+					</p>
+					<p class="opis">
+						Vrijeme do aktivnosti: 60min<br>
+						Početak: 12:00<br>
+						Kraj: 13:30
+					</p>
+				</div>
+			</fieldset>
+		</div>
+		<script src="js/aktivnost.js"></script>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+form{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: right;
+    position: relative;
+}
+
+label{
+    width: 120px;
+    display: inline-block;
+    text-align: right;
+}
+
+input, select{
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    width: 200px;
+}
+
+form button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 600px){
+    form{
+        width: fit-content;
+        margin: 0 auto;
+        text-align: right;
+    }
+
+    label{
+        display: flex;
+        font-size: 13px;
+    }
+
+    input, select{
+        width: 140px;
+        margin-bottom: 12px;
+        font-size: 11px;
+    }
+}
+

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../src/public/css/raspored.css">
+    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+    <title>Test</title>
+</head>
+<body>
+    <div id="test-iscrtaj-raspored"></div>
+    <div id="test-greska-iscrtaj-raspored"></div>
+    <div id="test-dodaj-aktivnost"></div>
+    <div id="test-greska-dodaj-aktivnost"></div>
+    <div id="mocha"></div>
+
+    <script src="https://unpkg.com/chai/chai.js"></script>
+    <script src="https://unpkg.com/mocha/mocha.js"></script>
+
+    <script class="mocha-init">
+        mocha.setup('bdd');
+        mocha.checkLeaks();
+    </script>
+    <script src="../../src/public/js/iscrtajModul.js"></script>
+    <script src="test.js"></script>
+    <script class="mocha-exec">
+        mocha.run();
+    </script>
+</body>
+</html>
