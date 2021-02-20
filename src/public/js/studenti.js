@@ -28,7 +28,7 @@ const parseStudentsCSV = () => {
     for(const student of studentiCSV){
         const studentInfo = student.split(",")
         if(studentInfo.length !== 2){
-            document.getElementById('textarea').value = "NEISPRAVAN CSV FORMAT! (z)"
+            document.getElementById('textarea').value = "NEISPRAVAN CSV FORMAT!"
             return null
         }
         console.log(document.getElementById('select').value)
