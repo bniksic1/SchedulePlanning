@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="topnav">
@@ -18,35 +19,66 @@
         <a href="studenti.html">CSV Unos studenata</a>
         <a class="bg-primary" href="">Baza podataka</a>
     </div>
-    <table class="table col-6">
-        <thead class="bg-primary text-white">
-        <tr>
-            <th scope="col"></th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-        </tr>
-        </tbody>
-    </table>
+    <div class="container d-flex justify-content-around">
+        <div>
+            <p class="text-secondary">Predmeti</p>
+            <table class="table border">
+                <thead class="bg-primary text-white">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Naziv</th>
+                    
+                </tr>
+                </thead>
+                <tbody id="tbody-predmeti"></tbody>
+            </table>
+        </div>
+        <div>
+            <p class="text-secondary">Tipovi</p>
+            <table class="table border">
+                <thead class="bg-primary text-white">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Naziv</th>
+                    
+                </tr>
+                </thead>
+                <tbody id="tbody-tipovi"></tbody>
+            </table>
+        </div>
+        <div>
+            <p class="text-secondary">Studenti</p>
+            <table class="table border">
+                <thead class="bg-primary text-white">
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Ime</th>
+                    <th scope="col">Index</th>
+                </tr>
+                </thead>
+                <tbody id="tbody-studenti"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container">
+        <p class="text-secondary">Aktivnosti</p>
+        <table class="table border">
+            <thead class="bg-primary text-white">
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Naziv</th>
+                <th scope="col">Početak</th>
+                <th scope="col">Kraj</th>
+                <th scope="col">Predmet</th>
+                <th scope="col">Dan</th>
+                <th scope="col">Tip</th>
+                
+            </tr>
+            </thead>
+            <tbody id="tbody-aktivnosti"></tbody>
+        </table>
+    </div>
+    <script src="js/pregled.js"></script>
 </body>
 </html>

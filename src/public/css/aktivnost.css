@@ -8,6 +8,7 @@ body{
 	display: flex;
 	color: #4c78af;
 	justify-content: center;
+	margin-top: 70px;
 }
 
 .side-rounded,
